@@ -1,0 +1,26 @@
+{
+  "name": "coloredui-api",
+  "version": "1.0.0",
+  "main": "app.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GRJorge/coloredui-api.git"
+  },
+  "author": "Jorge Garcia R",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GRJorge/coloredui-api/issues"
+  },
+  "homepage": "https://github.com/GRJorge/coloredui-api#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "typescript": "^5.7.2"
+  }
+}
