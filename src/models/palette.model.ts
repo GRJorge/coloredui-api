@@ -19,8 +19,8 @@ const colorSchema = new Schema(
 
 const schema = new Schema(
   {
-    dark: { 0: colorSchema, 1: colorSchema, 2: colorSchema },
-    light: { 0: colorSchema, 1: colorSchema, 2: colorSchema },
+    dark: { light: colorSchema, normal: colorSchema, dark: colorSchema },
+    light: { light: colorSchema, normal: colorSchema, dark: colorSchema },
     primary: colorSchema,
     secondary: colorSchema,
     green: colorSchema,
