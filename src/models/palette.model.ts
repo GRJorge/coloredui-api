@@ -1,6 +1,7 @@
 import { Schema, model } from "mongoose";
+import ColorSchema, { Palette } from "../interfaces/color.interface";
 
-const colorSchema = new Schema(
+const colorSchema = new Schema<ColorSchema>(
   {
     hex: { type: String, required: true, match: /^#([0-9A-Fa-f]{3}){1,2}$/ },
     rgb: {
@@ -17,7 +18,7 @@ const colorSchema = new Schema(
   { _id: false }
 );
 
-const schema = new Schema(
+const schema = new Schema<Palette>(
   {
     dark: { light: colorSchema, normal: colorSchema, dark: colorSchema },
     light: { light: colorSchema, normal: colorSchema, dark: colorSchema },
