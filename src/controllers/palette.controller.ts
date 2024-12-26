@@ -32,6 +32,14 @@ class PaletteController {
       res.status(500).json(error);
     }
   }
+  async getPopular(req: Request, res: Response) {
+    try {
+      const popularPalettes = await paletteModel.find().sort({ views: 1 });
+      res.status(200).json(popularPalettes);
+    } catch (error) {
+      res.status(500).json(error);
+    }
+  }
 }
 
 export default new PaletteController();
