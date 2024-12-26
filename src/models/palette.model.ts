@@ -14,6 +14,17 @@ const colorSchema = new Schema<ColorSchema>(
       s: { type: String, required: true },
       l: { type: String, required: true },
     },
+    cmyk: {
+      c: { type: String, required: true },
+      m: { type: String, required: true },
+      y: { type: String, required: true },
+      k: { type: String, required: true },
+    },
+    lab: {
+      l: { type: String, required: true },
+      a: { type: String, required: true },
+      b: { type: String, required: true },
+    },
   },
   { _id: false }
 );

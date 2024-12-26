@@ -10,6 +10,17 @@ export default interface ColorSchema {
     s: number;
     l: number;
   };
+  cmyk: {
+    c: number;
+    m: number;
+    y: number;
+    k: number;
+  };
+  lab: {
+    l: number;
+    a: number;
+    b: number;
+  };
 }
 
 export interface Palette {
