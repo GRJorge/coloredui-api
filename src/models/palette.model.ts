@@ -28,7 +28,7 @@ const schema = new Schema<Palette>(
     red: colorSchema,
     yellow: colorSchema,
   },
-  { versionKey: false }
+  { versionKey: false, timestamps: true }
 );
 
 export default model("Palette", schema);
