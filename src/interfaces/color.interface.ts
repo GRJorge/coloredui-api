@@ -28,4 +28,5 @@ export interface Palette {
   green: ColorSchema;
   red: ColorSchema;
   yellow: ColorSchema;
+  views?: number;
 }

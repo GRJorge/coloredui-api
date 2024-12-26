@@ -27,6 +27,7 @@ const schema = new Schema<Palette>(
     green: colorSchema,
     red: colorSchema,
     yellow: colorSchema,
+    views: { type: Number, default: 0 },
   },
   { versionKey: false, timestamps: true }
 );
